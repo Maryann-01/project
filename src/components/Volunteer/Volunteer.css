@@ -13,7 +13,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-height: 348px;
+/* height: 348px; */
 /* min-height: 100vh; */
 padding: 64px 445px ;
 gap:4vh;
@@ -27,7 +27,7 @@ flex-direction: column;
     font-family: Inter;
 font-size: 40px;
 font-weight: 700;
-line-height: 44px;
+/* line-height: 44px; */
 letter-spacing: 0em;
 text-align: center;
 }
@@ -35,7 +35,7 @@ text-align: center;
 font-family: myFont-P;
 font-size: 16px;
 font-weight: 400;
-line-height: 24px;
+/* line-height: 24px; */
 letter-spacing: 0em;
 text-align: left;
 
@@ -52,7 +52,8 @@ align-items: center;
 @media screen and (max-width:899px){
     #volunteer{
         display:flex;
-        min-height: fit-content;
+        /* height: 1200px; */
+        /* min-height: fit-content; */
         padding: 40px;
         align-items: center;
         justify-content: center;
@@ -64,6 +65,7 @@ align-items: center;
         letter-spacing: 0.1em;
         display:flex;
         align-items: center;
+        height: max-content;
         justify-content: center;
     }
     
@@ -74,7 +76,7 @@ align-items: center;
 .volunteer-btn{
     width:80vw;
     margin-top:30px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 }

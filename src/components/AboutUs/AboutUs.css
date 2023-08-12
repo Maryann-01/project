@@ -87,7 +87,7 @@
     font-family: myFont-P;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    /* line-height: 24px; */
     letter-spacing: 0em;
     text-align: left;
 }
@@ -96,7 +96,7 @@
     font-family: Inter;
     font-size: 40px;
     font-weight: 700;
-    line-height: 44px;
+    /* line-height: 44px; */
     letter-spacing: 0em;
     text-align: left;
 }
@@ -120,7 +120,7 @@
     font-family: Inter;
     font-size: 32px;
     font-weight: 700;
-    line-height: 35px;
+    /* line-height: 35px; */
     letter-spacing: 0em;
     text-align: left;
 }
@@ -129,7 +129,7 @@
     font-family: myFont-P;
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
+    /* line-height: 24px; */
     letter-spacing: 0em;
     text-align: left;
     color: grey;
@@ -265,7 +265,7 @@
 
 @media only screen and (max-width:900px) {
     .aboutUs{
-        width:1024px;
+        /* width:1024px; */
     }
     .aboutNav {
         gap: 8vw;
@@ -277,7 +277,7 @@
     font-size: 30px;
 }
     .aboutNav h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .secondAbout {

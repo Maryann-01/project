@@ -45,6 +45,8 @@ const Projects = () => {
     <section id="project">
       <div class="ourProjects">
         <h3>Our Projects</h3>
+        <br/>
+        <br/>
         <div className="projectCardContainer">
           {projects.map((project) => {
             return (
@@ -59,6 +61,9 @@ const Projects = () => {
           })}
         </div>
       </div>
+      <br/>
+      <br/>
+
     </section>
   )
 }

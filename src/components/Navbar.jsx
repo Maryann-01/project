@@ -8,7 +8,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <nav>
+    <nav className='nav-row'>
       <div className="navbar-header">
         <img src={logo} alt="fundACause Logo" />
         <img
@@ -18,11 +18,13 @@ const Navbar = () => {
           onClick={toggleMenu}
         />
       </div>
-      <ul className={`navLink ${isMenuOpen ? 'open' : ''}`}>
+      <ul className={`navLink ${isMenuOpen ? 'open' : ''} text-nav`}>
+        <div className='nv-links'>
         <li><a href="#about">About Us</a></li>
         <li><a href="#project">Our Projects</a></li>
         <li><a href="#volunteer">Volunteer</a></li>
         <li><a href="#contact">Contact Us</a></li>
+        </div>
         <li><button className="navbtn btn">Donate</button></li>
       </ul>
     </nav>
