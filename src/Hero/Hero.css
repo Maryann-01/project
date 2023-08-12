@@ -1,0 +1,79 @@
+@font-face {
+    font-family: myFont;
+    src: url(../open-sans-hebrew/OpenSansHebrew-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFont-P;
+    src: url(../open-sans-hebrew/OpenSansHebrew-Regular.ttf);
+}
+
+* {
+    font-family: myFont-P;
+}
+
+.hero__wrapper {
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, rgba(47, 128, 237, 0.4) 0%, rgba(47, 128, 237, 0.044) 100%), url("../images/Hero.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__content {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.hero__header {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 64px;
+    background-color: #2F80ED;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .hero__wrapper {
+        min-height: fit-content;
+        padding: 40px 0;
+        width:100%;
+    }
+
+    .hero__content {
+        max-width: 100%;
+        color:white;
+        align-items: center;
+    }
+
+    .hero__header, .hero__content > p {
+        text-align: center;
+    }
+    .hero__content > p{
+        font-size: 14px;
+        width:300px;
+    }
+    .hero__header {
+        font-size: 22px;
+    }
+
+}

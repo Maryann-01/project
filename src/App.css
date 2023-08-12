@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(./open-sans-hebrew/OpenSansHebrew-Bold.ttf);
+}
+
+@font-face {
+  font-family: myFont-P;
+  src: url(./open-sans-hebrew/OpenSansHebrew-Regular.ttf);
+}
+
+Link,
+a {
+  text-decoration: none;
+  animation-timing-function: ease-out;
+  animation-duration: 500ms;
+  color: #40444D;
+}
+
+body {
+  height: 100%;
+}
+
+.btn {
+  background-color: #2F80ED;
+  padding: 1em 2em;
+  border: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+}
+
+nav>img {
+  width: 66.03px;
+  height: 28.14px;
+  top: 15.55px;
+}
+
+.navLink li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 40px;
+  font-family: myFont;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+nav>ul .btn {
+  border-radius: 64px;
+  gap: 8px;
+  border: 1px solid #2F80ED;
+  color: #2F80ED;
+  background-color: white;
+  /* width: 113px; */
+  height: 56px;
+}
+
+.text p {
+  font-family: myFont-P;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 550px;
+  height: 48px;
+  font-size: 1.2vw;
+}
+
+.leftContent .btn {
+  border-radius: 64px;
+}
+
+#project {
+  background: #D5E6FB;
+  width: 100%;
+}
+
+.ourProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourProjects>h3 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 30px;
+
+}
+
+.projectCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+}
+
+.projectCard {
+  width: 384px;
+  /* height: 421px; */
+  border-radius: 8px;
+}
+
+.projectTxt {
+  background-color: #FFFFFF;
+  /* height: 133px; */
+  padding: 24px;
+  border-radius: 0px 0px 8px 8px;
+
+}
+
+.projectTxt>h6 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.projectTxt>p {
+  font-family: myFont-P;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2B2E33;
+}
+
+.menu-toggle {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  /* .heroSect {
+    background-size: auto;
+  } */
+
+  .leftContent .text h1 {
+    font-size: 4.5vw;
+    line-height: 8vh;
+  }
+
+  #project,
+  nav {
+    width: 100%;
+  }
+
+  .projectCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .text p {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 899px) {
+
+  nav {
+    /* width: 850px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 70px;
+  }
+
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text p,
+  .text h1 {
+    color: white;
+    text-align: center;
+  }
+
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .navLink {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .navLink.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    width: 100%;
+  
+  }
+
+  .navLink li {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .navLink .navbtn {
+    font-size: 22px;
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrowBtn {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    margin-right: 50px;
+    right: -95px;
+    position: absolute;
+    bottom: -40px;
+  }
+
+  .arrowBtn .hero-btn {
+    font-family: myfont-P;
+    font-size: 22px;
+  }
+
+  .projectCardContainer {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  }
+
+  .projectCard {
+     padding:50px 20px;
+  }
+
+  .projectCard img {
+    width: 90%;
+  }
+
+  .projectTxt {
+    border-radius: 0px 0px 8px 8px;
+    width:90%;
+  }
+
+  .projectTxt h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 15px;
+    width:300px;
+  }
+
+  .projectTxt p {
+    font-size: 15px;
+    line-height: 25px;
+    width:100%;
+  }
+}
+

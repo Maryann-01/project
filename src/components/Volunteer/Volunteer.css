@@ -1,0 +1,93 @@
+@font-face{
+    font-family:myFont-P;
+    src:url(../../open-sans-hebrew/OpenSansHebrew-Regular.ttf);
+  }
+#volunteer{
+    color:white;
+    text-align: center;
+    margin:0 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../images/volunteer.jpeg") no-repeat;
+    object-fit: cover;
+   background-size: cover;
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+height: 348px;
+/* min-height: 100vh; */
+padding: 64px 445px ;
+gap:4vh;
+}   
+.volunteerText{
+display: flex;
+gap: 3vh;
+flex-direction: column;
+} 
+.volunteerText h3{
+    font-family: Inter;
+font-size: 40px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: center;
+}
+.volunteerText p{
+font-family: myFont-P;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.volunteer-btn{
+padding: 16px 32px;
+border-radius: 64px;
+gap: 8px;
+align-self: center;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width:899px){
+    #volunteer{
+        display:flex;
+        min-height: fit-content;
+        padding: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .volunteerText{
+        /* width:700px; */
+        max-width: 100%;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+.volunteerText p{
+    font-size:18px;
+    line-height: 30px;
+}
+.volunteer-btn{
+    width:80vw;
+    margin-top:30px;
+    font-size: 22px;
+}
+
+}
+@media only screen and (max-width: 1024px) {
+    .volunteerText h3{
+        font-size: 30px;
+line-height: 40px;
+    }
+    .volunteerText{
+        width:300px;
+    }
+    .volunteerText p{
+        font-size: 15px;
+line-height: 20px;
+    }
+}

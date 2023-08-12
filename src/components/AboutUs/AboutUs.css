@@ -1,0 +1,427 @@
+@font-face {
+    font-family: myFont;
+    src: url(./open-sans-hebrew/OpenSansHebrew-Regular.ttf)
+}
+
+@font-face {
+    font-family: myFont-P;
+    src: url(../../open-sans-hebrew/OpenSansHebrew-Regular.ttf);
+}
+
+.aboutUs {
+    width: 100vw;
+    overflow-x: hidden !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutNav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 96px;
+    background-color: white;
+    width: 100%;
+    gap: 30vw;
+}
+
+.aboutNav h3 {
+    font-family: myFont;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.redirect {
+    display: flex;
+    width: 130px;
+    justify-self: flex-start;
+    height: 24px;
+    top: 36px;
+    left: 120px;
+}
+
+.redirect p {
+    font-family: myFont-P;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6B7280;
+}
+
+.img {
+    width: 470px;
+    height: 462px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.flexAbout {
+    padding: 150px 0px 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.thirdAbout {
+    gap: 20px;
+}
+
+.secondAbout {
+    background-color: #D5E6FB;
+}
+
+.secondAbout .textbox,
+.flexAbout .textbox {
+    width: 600px;
+}
+
+.textbox p {
+    font-family: myFont-P;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.textbox h3 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin: 20vh auto;
+    justify-content: center;
+}
+
+.content .mission,
+.content .vision {
+    box-shadow: 0px 4px 8px 0px #00000014;
+    background-color: #FFFFFF;
+    width: 25vw;
+    margin: 0 30px;
+}
+
+.content h6 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.content p {
+    font-family: myFont-P;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: grey;
+    width: 352px;
+    height: 48px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.teams {
+    box-shadow: 0px 4px 8px 0px #0000001A;
+    background: #FFFFFF;
+    width: 285px;
+    height: 423px;
+    border-radius: 4px;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+}
+
+.Volunteer {
+    background-color: #D5E6FB;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    width: 88%;
+    margin-top: 20vh;
+    padding: 48px 100px 48px 100px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.vol {
+    width: 550px;
+    height: 140px;
+    gap: 24px;
+}
+
+.vol h3 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.vol p {
+    font-family: myFont-P;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.volunteer-btn {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.scrollArrow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.teamText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teamText h6 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.teamText p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #898E99;
+}
+
+.teamHeader h3 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .aboutUs{
+       overflow-x: hidden !important;
+    }
+    .team {
+        flex-wrap: wrap;
+        gap: 10vw;
+        margin-top: 15px;
+    }
+    .flexAbout{
+        display:flex;
+        gap:2px;
+        padding: 150px 0px 100px;
+    }
+    .img, .textbox-img{
+       width:400px;
+       height:300px;
+    }
+    .textbox p{
+        width:500px;
+    }
+    .scrollArrow {
+        margin: 5px 20px 150px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .aboutUs{
+        width:1024px;
+    }
+    .aboutNav {
+        gap: 8vw;
+    }
+.redirect{
+    width:400px;
+}
+.redirect p{
+    font-size: 30px;
+}
+    .aboutNav h3 {
+        font-size: 25px;
+    }
+
+    .secondAbout {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .teamText h6 {
+        font-size: 28px;
+    }
+    .teamText p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img,
+    .textbox-img,
+    .headlineDiv img {
+        width: 500px;
+        height: 500px;
+        border-radius: 4px;
+    }
+
+    .headlineDiv .textbox {
+        text-align: center;
+        width: 360px;
+    }
+
+    .textbox h3,
+    .headlineDiv h2 {
+        font-family: Inter;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .headlineDiv h2 {
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 360px;
+        height: 27px;
+        margin-top:10px;
+    }
+
+    .textbox p {
+        font-family: myFont-P;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+       margin-top:20px;
+        width:600px;
+    }
+
+    .team,
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .content .mission img,
+    .content .vision img {
+        width: 100px;
+        height: 100px;
+        display:flex;
+        justify-self:flex-start;
+        align-self: flex-start;
+    }
+
+    .content .mission h6,
+    .content .vision h6 {
+        font-size: 50px;
+        width:100%;
+        text-align: left;
+    }
+
+    .content .mission,
+    .content .vision {
+        width: 100%;
+        height: 450px;
+        margin: 50px 0;
+    }
+
+    .content .mission p,
+    .content .vision p {
+        font-size: 35px;
+        width: 95%;
+        line-height: 35px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+        color: grey;
+    }
+
+    .headlineDiv {
+        width: 500px;
+        /* gap: 10px; */
+        margin:20px auto 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fourthAbout {
+        flex-direction: column-reverse;
+    }
+
+    .Volunteer {
+        background-color: #D5E6FB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:60px;
+        width:100%;
+    }
+    .vol p {
+        width: 500px;
+        text-align: center;
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .vol h3 {
+        margin:0 auto;
+        width:300px;
+        text-align: center;
+    }
+
+    .volunteer-btn {
+        margin-top:300px;
+    }
+    .scrollArrow {
+        margin: 90px 70px 100px;
+    }
+}
