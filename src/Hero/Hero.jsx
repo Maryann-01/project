@@ -21,6 +21,7 @@ const _Hero = () => {
 const Hero = () => {
   return (
     <div className='hero__wrapper'>
+      <div className='hero-container'>
       <div className="hero__content">
         <div className="hero__header">
           Show Love & Care by Funding A Cause Today
@@ -31,6 +32,7 @@ const Hero = () => {
           Make a Donation
           <img src={arrowRight} alt="arrow right" />
         </button>
+      </div>
       </div>
     </div>
   )

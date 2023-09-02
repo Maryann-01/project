@@ -25,7 +25,7 @@
 }
 
 .hero__content {
-    max-width: 40%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,9 +33,13 @@
     gap: 20px;
 }
 
+.hero-container {
+    width: 87%;
+    margin: 0 auto;
+}
 .hero__header {
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .hero__cta {

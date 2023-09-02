@@ -42,9 +42,9 @@ const Contact = () => {
                 </div>
                 <button className="contact-btn btn"><span>Send Message</span><img src={arrowRight}/></button>
             </form>
-            <div className="contactArrow">
+            {/* <div className="contactArrow">
               <ScrollToTopArrow/>
-            </div>
+            </div> */}
         </div>
     )
 }
