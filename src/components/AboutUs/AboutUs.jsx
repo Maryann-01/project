@@ -1,6 +1,7 @@
 import React from 'react'
 import "../AboutUs/AboutUs.css"
 import { Link } from 'react-router-dom'
+import Contact from "../Contact/Contact"
 import Home from "../Home"
 import Content from "../Content/Content"
 import "../../images/vision.png"
@@ -68,7 +69,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="flexAbout fourthAbout  headlineDiv">
-        <div className="textbox ">
+        <div className="textbox">
           <h2>Headline goes here</h2>
           <p>Lorem ipsum dolor sit amet consectetur. Cras ut in facilisis in. Feugiat feugiat euismod magna fermentum nisl nec a volutpat a. Congue nisl mi porttitor nunc faucibus.</p>
         </div>

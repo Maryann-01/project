@@ -2,6 +2,10 @@
     font-family:myFont-P;
     src:url(../../open-sans-hebrew/OpenSansHebrew-Regular.ttf);
   }
+.join-link{
+    text-decoration: none;
+    color:white;
+  }
 #volunteer{
     color:white;
     text-align: center;
@@ -25,7 +29,7 @@ flex-direction: column;
 } 
 .volunteerText h3{
     font-family: Inter;
-font-size: 40px;
+font-size: 3vw;
 font-weight: 700;
 /* line-height: 44px; */
 letter-spacing: 0em;
@@ -33,21 +37,31 @@ text-align: center;
 }
 .volunteerText p{
 font-family: myFont-P;
-font-size: 16px;
+font-size: 1.2vw;
 font-weight: 400;
+width:45vw;
 /* line-height: 24px; */
 letter-spacing: 0em;
 text-align: left;
 
 }
 .volunteer-btn{
-padding: 16px 32px;
+padding: 1.2vh 2vw;
 border-radius: 64px;
 gap: 8px;
 align-self: center;
 display:flex;
 justify-content: center;
 align-items: center;
+}
+.volunteer-btn:hover{
+    background-color:hsla(214, 67%, 45%, 1);
+}
+.volunteer-btn span{
+    font-size: 1vw;
+}
+.volunteer-btn img{
+    width:0.9vw;
 }
 @media screen and (max-width:899px){
     #volunteer{
@@ -71,7 +85,8 @@ align-items: center;
     
 .volunteerText p{
     font-size:18px;
-    line-height: 30px;
+    text-align:center;
+    width:70vw;
 }
 .volunteer-btn{
     width:80vw;
@@ -82,14 +97,25 @@ align-items: center;
 }
 @media only screen and (max-width: 1024px) {
     .volunteerText h3{
-        font-size: 30px;
-line-height: 40px;
-    }
-    .volunteerText{
-        width:300px;
+        font-size: 7vw;
     }
     .volunteerText p{
-        font-size: 15px;
-line-height: 20px;
+        font-size: 2.5vw;
+        width:90vw;
+        text-align: center;
+    }
+    .Volunteer .btn{
+        padding:4vh 5vw;
+        margin-top:5vh;
+    }
+    .volunteer-btn{
+    padding:3vh 2vw;
+    width:40vw;
+    }
+    .volunteer-btn span{
+        font-size: 3vw;
+    }
+    .volunteer-btn img{
+        width:4vw;
     }
 }

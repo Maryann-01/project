@@ -2,7 +2,6 @@
     font-family: myFont;
     src: url(./open-sans-hebrew/OpenSansHebrew-Regular.ttf)
 }
-
 @font-face {
     font-family: myFont-P;
     src: url(../../open-sans-hebrew/OpenSansHebrew-Regular.ttf);
@@ -10,7 +9,6 @@
 
 .aboutUs {
     width: 100vw;
-    overflow-x: hidden !important;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -22,7 +20,8 @@
     display: flex;
     /* justify-content: space-evenly; */
     align-items: center;
-    height: 96px;
+    height: 12vh;
+    /* border:2px solid red; */
     background-color: white;
     width: 100%;
     gap: 30vw;
@@ -30,44 +29,55 @@
 
 .aboutNav h3 {
     font-family: myFont;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 700;
-    line-height: 44px;
+    /* line-height: 44px; */
     letter-spacing: 0em;
     text-align: center;
 }
 
 .redirect {
     display: flex;
-    width: 130px;
     justify-self: flex-start;
-    height: 24px;
+    height: 4vh;
     top: 36px;
     left: 120px;
+    align-items: center;
 }
 
 .redirect p {
     font-family: myFont-P;
-    font-size: 14px;
+    font-size: 0.9vw;
     font-weight: 700;
-    line-height: 21px;
+    /* line-height: 21px; */
     letter-spacing: 0em;
     text-align: left;
     color: #6B7280;
 }
 
+.redirect img {
+    width: 1.3vw;
+}
+
 .img {
-    width: 470px;
-    height: 462px;
+    width: 35vw;
+    height: 73vh;
     margin-right: 10px;
     border-radius: 4px;
 }
 
 .flexAbout {
-    padding: 150px 0px 100px;
+    /* padding: 150px 0px 100px; */
+    padding: 29vh 0vh 18vh;
     justify-content: center;
     display: flex;
+    gap: 6vw;
     align-items: center;
+}
+
+.headlineDiv img {
+    width: 40vw;
+    height: 73vh;
 }
 
 .thirdAbout {
@@ -80,12 +90,13 @@
 
 .secondAbout .textbox,
 .flexAbout .textbox {
-    width: 600px;
+    /* width: 600px; */
+    width: 44vw;
 }
 
 .textbox p {
     font-family: myFont-P;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-weight: 400;
     /* line-height: 24px; */
     letter-spacing: 0em;
@@ -94,11 +105,15 @@
 
 .textbox h3 {
     font-family: Inter;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 700;
     /* line-height: 44px; */
     letter-spacing: 0em;
     text-align: left;
+}
+
+.textbox h2 {
+    font-size: 2vw;
 }
 
 .content {
@@ -129,7 +144,7 @@
     font-family: myFont-P;
     font-size: 16px;
     font-weight: 700;
-    /* line-height: 24px; */
+
     letter-spacing: 0em;
     text-align: left;
     color: grey;
@@ -141,28 +156,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 2vw;
+    width: 90vw;
+    margin: 0 auto;
+     height:100%;
+     overflow: visible !important;
 }
 
 .teams {
-    box-shadow: 0px 4px 8px 0px #0000001A;
     background: #FFFFFF;
-    width: 285px;
-    height: 423px;
+    box-shadow: 4px 4px 8px 4px hsla(0, 0%, 0%, 0.1);
+    width: 50vw;
+    height: 100%;
+    overflow: visible !important;
     border-radius: 4px;
-    overflow: hidden;
     align-self: center;
     justify-self: center;
+    /* gap:10vw; */
+    margin-top: 15px;
+    /* border:2px solid red; */
 }
-.teams p{
-    padding-top:10px;
+
+.teams>img {
+    /* width:40vw; */
+    width: 100%;
+    /* border:2px solid red; */
 }
+
+.teams p {
+    padding-bottom: 3vh;
+}
+
 .Volunteer {
     background-color: #D5E6FB;
     align-self: center;
     justify-self: center;
     display: flex;
-    width:80vw;
+    width: 90vw;
     margin-top: 20vh;
     padding: 48px 100px 48px 100px;
     border-radius: 8px;
@@ -170,16 +200,16 @@
 }
 
 .vol {
-    width: 550px;
-    height: 140px;
+    width: 45vw;
+    height: 25vh;
     gap: 24px;
 }
 
 .vol h3 {
     font-family: Inter;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 700;
-    line-height: 44px;
+    /* line-height: 44px; */
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 15px;
@@ -187,9 +217,8 @@
 
 .vol p {
     font-family: myFont-P;
-    font-size: 16px;
+    font-size: 1.3vw;
     font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -213,18 +242,16 @@
 
 .teamText h6 {
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1.8vw;
     font-weight: 600;
-    line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
 }
 
 .teamText p {
     font-family: Inter;
-    font-size: 12px;
+    font-size: 1vw;
     font-weight: 600;
-    line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
     color: #898E99;
@@ -232,78 +259,53 @@
 
 .teamHeader h3 {
     font-family: Inter;
-    font-size: 40px;
+    font-size: 3.6vw;
     font-weight: 700;
-    line-height: 44px;
     letter-spacing: 0em;
     text-align: center;
 }
 
-@media  only screen and (max-width: 1024px) {
-    .aboutUs{
-       overflow-x: hidden !important;
-    }
-    .team {
-        flex-wrap: wrap;
-        gap: 10vw;
-        margin-top: 15px;
-    }
-    .flexAbout{
-        display:flex;
-        gap:30px;
-        padding: 150px 15px 100px; 
-    }
-   
-    .img, .textbox-img{
-       width:400px;
-       height:300px;
-    }
-    .textbox p{
-        width:500px;
-    }
-    .content .mission p,
-    .content .vision p {
-        padding-bottom: 120px;
-    }
-    .volunteer-btn {
-        width:150px;
-    }
-    .scrollArrow {
-        margin: 5px 20px 150px;
-    }
-}
-
-@media only screen and (max-width:900px) {
-    .aboutUs{
+@media only screen and (max-width:1024px) {
+    .aboutUs {
         overflow-x: hidden !important;
-        width:100%;
+        width: 100%;
     }
+
     .aboutNav {
         gap: 8vw;
         display: flex;
         justify-content: space-evenly;
     }
-.redirect p{
-    width:700px;
+    
+.redirect img{
+    width:6vw;
 }
+    .redirect p {
+     /* z-index: 1; */
+        font-size:4vw;
+    }
+
     .aboutNav h3 {
         font-size: 20px;
     }
+
     .secondAbout {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .teamText h6 {
         font-size: 28px;
     }
+
     .teamText p {
         font-size: 20px;
         margin-top: 15px;
     }
+
     .textbox {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
@@ -311,81 +313,113 @@
     .textbox-img,
     .headlineDiv img {
         border-radius: 4px;
-        width:300px;
+        width: 90vw;
+        height: 80vh;
     }
 
-    .headlineDiv .textbox {
+    .headlineDiv .textbox,
+    .flexAbout .textbox {
         text-align: center;
+        width: 90%;
     }
-.headlineDiv{
-    padding: 40px 0px 100px;
-    display: flex;
+
+    .headlineDiv {
+        padding: 40px 0px 100px;
+        display: flex;
         flex-direction: column;
-}
-    .textbox h3{
-        font-family: Inter;
-        font-size: 30px;
+    }
+
+    .textbox h3 {
+        font-size: 10vw;
         font-weight: 700;
-        line-height: 44px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding-top:15px;
+        padding-top: 15px;
+
     }
 
     .headlineDiv h2 {
         font-size: 30px;
         font-weight: 700;
-        line-height: 26px;
         letter-spacing: 0em;
+        margin-top: 10px;
         text-align: left;
-        height: 27px;
-        margin-top:10px;
     }
 
     .textbox p {
         font-family: myFont-P;
-        font-size: 18px;
+        font-size: 4.2vw;
         font-weight: 400;
-        line-height: 27px;
         letter-spacing: 0em;
-       margin-top:20px;
-        width:330px;
+        margin-top: 20px;
+        width: 100%;
     }
 
     .team,
     .content {
         flex-wrap: wrap;
     }
+
+    .teams {
+        width: 100%;
+          box-shadow: 0px 4px 8px 0px hsla(0, 0%, 0%, 0.1);
+          height:100%;
+          overflow: visible !important;
+    }
+
+    .teamHeader h3 {
+        font-size: 9vw;
+        padding-bottom: 5vh;
+    }
+
+    .team {
+        gap: 8vh;
+        overflow: visible;
+        overflow: visible !important;
+    }
+
+    .content .missionAndVis {
+        display: flex;
+        flex-direction: column;
+        gap: 7vh;
+    }
+
     .content .mission,
     .content .vision {
-        width: 90%;
-        margin: 10px 0;
+        width: 90vw;
     }
+
     .content .mission img,
     .content .vision img {
-        width: 100px;
-        height: 100px;
-        display:flex;
-        justify-self:flex-start;
+        width: 150px;
+        height: 150px;
+        background-color: hsla(214, 84%, 91%, 1);
+        border-radius: 50%;
+        padding: 30px;
+        display: flex;
+        justify-self: flex-start;
+        margin-left: 20px;
         align-self: flex-start;
     }
 
     .content .mission h6,
     .content .vision h6 {
-        font-size: 35px;
-        width:100%;
+        font-size: 9vw;
+        width: 100%;
+        margin-left: 50px;
+        padding: 5vh 0;
         text-align: left;
     }
+
     .content .mission p,
     .content .vision p {
-        font-size: 17px;
-        line-height: 35px;
+        font-size: 5vw;
         font-weight: 700;
         letter-spacing: 0em;
         text-align: left;
         color: grey;
-        padding-left: 15px;
-        padding-bottom: 90px;
+        width: 100%;
+        height: 100%;
+        padding-left: 2vw;
+        padding-bottom: 20px;
     }
 
     .fourthAbout {
@@ -398,25 +432,34 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap:60px;
-        width:100%;
-    }
-    .vol p {
-        width: 330px;
-        margin:0 auto;
-        text-align: center;
-        font-size: 17px;
-        line-height: 33px;
-    }
-    .vol h3 {
-        margin:0 auto;
-        text-align: center;
+        width: 100%;
     }
 
-    .volunteer-btn {
-        margin-top:300px;
+    .vol {
+        width: 90vw;
+        height: 100%;
+        gap: 24px;
     }
+
+    .vol p {
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .vol h3 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .Volunteer .btn span {
+        font-size: 4vw;
+    }
+    .Volunteer .btn img {
+        width: 3vw;
+    }
+
     .scrollArrow {
-        margin: 90px 70px 100px;
+        margin: 80px 70px 50px;
     }
 }
