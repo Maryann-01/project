@@ -38,8 +38,9 @@ const footer = () => {
           <p>Privacy Policy</p>
         </div>
       </main>
+      <hr/>
       <div className="copyright">
-        <p>Copyright © 2023 FundACause. All rights reserved. This platform was designed & developed by  </p>
+        <p>Copyright © 2023 FundACause. All rights reserved. This platform was designed & developed by    </p>
         <img src={specsLogo} alt="SystemSpecs Logo"/>
       </div>
     </div>
