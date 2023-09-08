@@ -84,8 +84,7 @@
     }
     .hero__content > p{
         font-size: 5vw;
-        width:300px;
-        line-height: 5vh;
+        width:70vw;
     }
     .hero__header {
         font-size: 22px;
