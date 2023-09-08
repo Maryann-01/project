@@ -313,8 +313,8 @@
     .textbox-img,
     .headlineDiv img {
         border-radius: 4px;
-        width: 90vw;
-        height: 80vh;
+        width: 95vw;
+        height: 60vh;
     }
 
     .headlineDiv .textbox,
@@ -389,8 +389,8 @@
 
     .content .mission img,
     .content .vision img {
-        width: 150px;
-        height: 150px;
+        width: 90px;
+        height: 90px;
         background-color: hsla(214, 84%, 91%, 1);
         border-radius: 50%;
         padding: 30px;
