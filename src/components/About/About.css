@@ -11,7 +11,7 @@
 #about {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 60px 80px;
     justify-content: space-between;
     gap: 40px;
@@ -86,7 +86,6 @@ aside p {
       padding:40px;
         min-height: fit-content;
         width:100%;
-        position: relative;
     }
 
     #about .aboutImg {
@@ -137,11 +136,15 @@ aside p {
     font-size: 9vw;
 }
     .liveChat {
-    right:-5px;
-    top:70vh;
+    /* right:-50px; */
+    padding-left:0 -90vw;
+    top:57vh;
+    right:60vw;
     position: absolute;
-    width:30vw;
+    width:14vw;
+    position: relative;
     }
+    
 }
 
 @media only screen and (max-width: 1024px) {
@@ -155,7 +158,7 @@ aside p {
 
     #about .aboutImg {
         /* width:40%; */
-        height: 100vh;
+        /* height: 100vh; */
         object-fit: contain;
     }
 
