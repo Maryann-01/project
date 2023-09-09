@@ -105,11 +105,9 @@ align-items: center;
         text-align: center;
     }
     .Volunteer .btn{
-        padding:4vh 5vw;
         margin-top:5vh;
     }
     .volunteer-btn{
-    padding:3vh 2vw;
     width:40vw;
     }
     .volunteer-btn span{

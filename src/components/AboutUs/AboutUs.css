@@ -18,10 +18,8 @@
     position: fixed;
     top: 0;
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
-    height: 12vh;
-    /* border:2px solid red; */
+    height: 13vh;
     background-color: white;
     width: 100%;
     gap: 30vw;
@@ -272,22 +270,20 @@
     }
 
     .aboutNav {
-        gap: 8vw;
         display: flex;
         justify-content: space-evenly;
     }
-    
+    .aboutNav h3 {
+        font-family: myFont;
+        font-size: 6vw;
+    } 
 .redirect img{
     width:6vw;
 }
     .redirect p {
-     /* z-index: 1; */
-        font-size:4vw;
+        font-size:3vw;
     }
 
-    .aboutNav h3 {
-        font-size: 20px;
-    }
 
     .secondAbout {
         display: flex;
@@ -443,7 +439,10 @@
 
     .vol p {
         text-align: center;
-        font-size: 3vw;
+        font-size: 4vw;
+        width:90vw;
+        font-weight: 400;
+        margin: 4vh 0;
     }
 
     .vol h3 {
