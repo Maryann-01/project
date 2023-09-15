@@ -34,9 +34,11 @@ const Contact = () => {
                     <label htmlFor="textArea">Message</label><br/>
                     <textarea id="textArea" />
                 </div>
-                <div>
+                <div className='checkbox-div'>
                     <input type="checkbox" className="checkbox" />
-                    <span className="span">You agree to our friendly privacy policy.</span>
+                    <div>
+                     <span className="span">You agree to our friendly privacy policy.</span>
+                    </div>
                 </div>
                 <button className="contact-btn btn"><span>Send Message</span><img src={arrowRight}/></button>
             </form>

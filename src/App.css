@@ -290,8 +290,8 @@ nav>ul .btn {
 
   .navLink li {
     margin-bottom: 1rem;
-    font-size: 22px;
-    padding: 10px;
+    font-size: 4vw;
+    padding: 8px;
     
   }
 .nv-links{
@@ -299,13 +299,13 @@ nav>ul .btn {
   flex-direction: column;
 }
   .navLink .navbtn {
-    font-size: 22px;
-    width:90vw;
+    font-size: 5vw;
+    width:80vw;
+    border-radius:30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .arrowBtn {
     width: 100vw;
     display: flex;

@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState,useEffect} from 'react'
 import "../About/About.css"
 import Content from "../Content/Content"
 import aboutImg from "../../images/aboutImage.png"
@@ -7,6 +7,28 @@ import AboutUs from "../AboutUs/AboutUs"
 import arrowRight from "../../images/arrow-right.png"
 import liveChat from "../../images/Live chat.png"
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+const scrollThreshhold=window.innerHeight/3
+  const handleScroll = () => {
+    if (window.pageYOffset >scrollThreshhold) {
+      setIsVisible(true);
+
+      
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top:0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div id="about">
       <img src={aboutImg} alt="aboutImage" className="aboutImg"/>
@@ -18,7 +40,9 @@ const About = () => {
         <Content />
         <button className="about-btn btn"><Link to="/aboutUs" className="about-link">Read More</Link><img src={arrowRight}/></button>
       </aside>
-      <img src={liveChat} alt="live chat icon" className="liveChat"/>
+      <div onClick={scrollToTop} style={{display:isVisible?"block":"none"}}>
+       <img src={liveChat} alt="live chat icon" className="liveChat" />
+      </div>
     </div>
   )
 }

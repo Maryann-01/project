@@ -15,6 +15,11 @@ padding: 50px 0px;
 position: relative;
 /* position:relative; */
 }
+.checkbox-div{
+    display:flex;
+    align-items: center;
+    gap:1.5vw;
+}
 .formCard{
     left: 432px;
     font-family: myFont;
@@ -35,8 +40,6 @@ text-align: center;
 }
 form{
     width:40vw;
-    /* height:90vh; */
-/* height: 499px; */
 display:flex;
 flex-direction: column;
 gap: 2vh;
@@ -134,27 +137,32 @@ button span{
     width:2vw;
 }
 form input[type=text],input[type=email],input[type=tel]{
-    padding:2vh 1vw;
+    padding:1.3vh 1vw;
     width:100%;
     font-size:4vw;
 }
     form label{
     font-family: myFont;
-    font-size: 3vw;
+    font-size: 3.3vw;
 }
 .formCard p{
 font-family: myFont-P;
-font-size: 2.5vw;
+font-size: 3.4vw;
 }
     #firstName,#lastName{
     width:40vw;
     }
     ::placeholder{
     font-family: myFont-P;
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     }
 .formCard h3{
-    font-size: 6vw;
+    font-size: 6.2vw;
+font-family:myFont;
+font-weight: 700;
+padding-bottom:2vh;
+    margin:0 auto;
+    text-align: center;
 }
 .checkbox{
     height:4vh;
@@ -165,7 +173,6 @@ font-size: 2.5vw;
     font-size:3.5vw;
     height:100vh;
     width:100vw;
-   padding:2vh 3vw;
 }
 .contact-btn{
   margin-top:40px;
@@ -187,4 +194,24 @@ font-size: 2.5vw;
     margin-bottom: 120px;
     margin:0 auto;
 }
+}
+@media only screen and (max-width: 500px) {
+    ::placeholder{
+        font-family: myFont-P;
+        font-size: 4vw;
+        }
+        form input[type=text],input[type=email],input[type=tel]{
+            padding:1vh 1vw;
+            width:100%;
+            font-size:4vw;
+        }
+        form label{
+            font-size: 4vw;
+        }
+        .formCard h3{
+            width:70vw;
+        }
+        .contact-btn img{
+            width:3.5vw;
+        }
 }

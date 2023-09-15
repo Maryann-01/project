@@ -85,13 +85,14 @@ hr{
     letter-spacing: 0em;
     text-align: left;
     display: flex;
+    gap:0.3vw;
     color: white;
     align-items: center;
     justify-content: center;
     /* margin-top: 7vh; */
 }
 .copyright img{
-    width:7vw;
+    width:5.5vw;
     height:3vh;
 }
 @media only screen and (max-width: 1024px) {
