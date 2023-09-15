@@ -33,7 +33,7 @@
 
 .mission img,
 .vision img {
-    width: 5vw;
+    width: 3.5vw;
 }
 
 @media only screen and (max-width: 899px) {

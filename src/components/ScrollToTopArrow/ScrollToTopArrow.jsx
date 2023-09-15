@@ -4,17 +4,19 @@ import arrow from "../../images/Vector.png"
 import "../ScrollToTopArrow/ScrollToTopArrow.css"
 const ScrollToTopArrow = () => {
   const [isVisible, setIsVisible] = useState(false);
-
+const scrollThreshhold=window.innerHeight/2
   const handleScroll = () => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset >scrollThreshhold) {
       setIsVisible(true);
+
+      
     } else {
       setIsVisible(false);
     }
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top:0, behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -27,7 +29,7 @@ const ScrollToTopArrow = () => {
   return (
     <div
       className={`scroll-to-top-arrow ${isVisible ? 'visible' : 'hidden'}`}
-      onClick={scrollToTop}
+      onClick={scrollToTop} style={{display:isVisible?"block":"none"}}
     >
       <img src={arrow} alt="Scroll to Top" />
     </div>

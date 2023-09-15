@@ -1,6 +1,8 @@
 .scroll-to-top-arrow{
-    width: 96px;
+    width: 60px;
 animation-timing-function: ease-out;
 animation-duration: 500ms;
-
+position: fixed;
+bottom:0;
+right:30px;
 }
